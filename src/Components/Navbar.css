@@ -1,0 +1,48 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-left: -368px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .navbar-heading {
+    color: #fff;
+    margin: 0;
+    margin-left: -190px;
+  }
+  .navbar-links
+  {
+    margin-top: 15px;
+    margin-left: 300px;
+    margin-right: -210px;
+  }
+  .navbar-link {
+    color: #dfe2df;
+    text-decoration: none;
+    /* font-size: 35px; */
+    font-size: 20px;
+    margin: 0 15px;
+    /* margin-top: -40px; */
+    padding: 8px 16px; /* Add padding */
+    border: 1px solid transparent; /* Add a transparent border */
+    transition: transform 0.3s, border 0.3s; /* Add a transition effect */
+  }
+  
+  .navbar-link:hover {
+    text-decoration: underline;
+    transform: scale(1.1); /* Increase size on hover */
+    background-color: rgba(255, 0, 183, 0.432);
+    border: 1px solid #fff; /* Add a border on hover */
+  }

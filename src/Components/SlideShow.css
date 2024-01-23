@@ -1,0 +1,9 @@
+/* SlideShow.css */
+
+.slide-container
+{
+  width:1000px;
+  margin-left: -30px;
+  background-size: 100% 100%;
+  margin-top: 20px;
+}
