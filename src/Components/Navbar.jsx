@@ -1,22 +1,41 @@
-// Navbar.jsx
+// // Navbar.jsx
+// // import React from 'react';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBook } from '@fortawesome/free-solid-svg-icons';
+// import './Navbar.css';
 
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+// const Navbar = () => {
+//   return (
+//     <nav className="navbar">
+//       <div className="brand">
+//         <FontAwesomeIcon icon={faBook} className="learning-icon" />
+//         LearnHub
+//       </div>
+//       <ul className="nav-list">
+//         <li className="nav-item">
+//           <a href="#" className="nav-link">
+//             Courses
+//           </a>
+//         </li>
+//         <li className="nav-item">
+//           <a href="#" className="nav-link">
+//             Enquiry
+//           </a>
+//         </li>
+//         <li className="nav-item">
+//           <a href="#" className="nav-link">
+//             Dashboard
+//           </a>
+//         </li>
+//         <li className="nav-item">
+//           <a href="#" className="nav-link">
+//             Payment
+//           </a>
+//         </li>
+//       </ul>
+//     </nav>
+    
+//   );
+// };
 
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <h1 className="navbar-heading"> Student Enquiry Portal</h1>
-        <div className="navbar-links">
-          <Link to="/courses" className="navbar-link">Courses</Link>
-          <Link to="/enquiry" className="navbar-link">Enquiry</Link>
-          <Link to="/dashboard" className="navbar-link">Dashboard</Link>
-          <Link to="/payment-history" className="navbar-link">Payment History</Link>
-        </div>
-      </div>
-    </nav>
-  );
-};
-
-export default Navbar;
+// export default Navbar;
