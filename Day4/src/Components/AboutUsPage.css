@@ -1,0 +1,217 @@
+/* AboutUsPage.css */
+
+/* Navbar Styles */
+.abtnavbar {
+  background: linear-gradient(45deg, #6c5ce7, #00cec9);
+  padding: 30px;
+  border-bottom: 2px solid #00cec9;
+  display: flex;
+  margin-top: -100px;
+  position: fixed;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.abtbrand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.abtlearning-icon {
+  margin-right: 10px;
+  color: #fdcb6e;
+}
+
+.abtnav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.abtnav-item {
+  margin-right: 30px;
+}
+
+/* Link Styles */
+.abtnav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: relative;
+}
+
+.abtnav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.abtnav-link:hover {
+  background: linear-gradient(45deg, #00cec9, #6c5ce7);
+  color: #fff;
+}
+
+.abtnav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: #fff;
+}
+
+/* About Us Container Styles */
+.about-us-container {
+  width: 70%;
+  margin-top: 100px;
+  padding: 40px;
+  margin-left: 200px;
+  text-align: left;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 2px solid #3498db;
+}
+
+/* Hover effect for about-us-container */
+.about-us-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+.about-us-heading {
+  color: #3498db;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Description Styles */
+.about-us-description {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+/* Mission Heading Animation */
+.mission-heading::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #3498db, #87CEEB);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.mission-heading:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Testimonials Section Styles */
+.testimonials-heading {
+  font-size: 32px;
+  color: #3498db;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  transition: transform 0.3s ease;
+  border: 2px solid #3498db;
+}
+
+/* Hover effect for testimonials */
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.star-icon {
+  color: #f0c419;
+  margin-right: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 16px;
+  color: #777;
+  font-style: italic;
+}
+
+/* Gallery Section Styles */
+.gallery-heading {
+  font-size: 32px;
+  color: #3498db;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-image {
+  width: 30%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 2px solid #3498db;
+}
+
+/* Hover effect for gallery images */
+.gallery-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
