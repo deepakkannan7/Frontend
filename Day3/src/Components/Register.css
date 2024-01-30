@@ -1,0 +1,115 @@
+/* Register.css */
+
+.registration-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Adjust the gap between grids */
+  }
+  
+  .rleft-grid {
+    padding: 20px;
+    background-color: #34cddb; /* Background color for the left grid */
+    margin-top: 70px;
+    margin-left: 60px;
+    width: 90%; /* Adjust the width as needed */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect for background color */
+  }
+  
+  .rleft-grid:hover {
+    background-color: #5f94c9; /* Darker background on hover */
+  }
+  .rlogin-link
+  {
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  
+  .rright-grid {
+    /* padding: 20px; */
+    background-color: #c1cc2e; /* Background color for the right grid */
+    margin-top: 70px;
+    width: 80%; /* Adjust the width as needed */
+    margin-left: 60px;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect for background color */
+  }
+    .bimg {
+    background: url('https://img.freepik.com/free-photo/flay-lay-workspace-with-copy-space_23-2148219328.jpg'); 
+    background-size: cover;
+    height: 100vh; 
+    margin-top: -20px;
+  } 
+  .rright-grid:hover {
+    background-color: #2727ae; /* Darker background on hover */
+  }
+  
+  .rright-box-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 50px; 
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .rerror-message {
+    color: #e74c3c; /* Lighter red color for error messages */
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+  
+  .rform-input {
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  
+  .rform-label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    color: #fff; /* White color for labels */
+  }
+  
+  .rform-field {
+    width: 70%; /* Adjust the width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 100px;
+    transition: border-color 0.3s ease-in-out; /* Add a smooth transition effect for input fields */
+  }
+  
+  .rform-field:focus {
+    border-color: #03d3f3; /* Highlight border color on focus */
+  }
+  
+  .rregister-button {
+    background-color: #13ce32; /* Lighter red color for the button */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect for the button */
+  }
+  
+  .rregister-button:hover {
+    background-color: #5d2bc0; /* Darker shade on hover */
+  }
+  
+  .register {
+    margin-left: 700px;
+    margin-top: 20px;
+    color: #2b012c; /* White color for text */
+    transition: color 0.3s ease-in-out; /* Add a smooth transition effect for text color */
+  }
+  
+  .register:hover {
+    color: #e81dc0; /* Lighter text color on hover */
+  }
+  
+  /* Add any additional styles as needed */
+  

@@ -1,0 +1,232 @@
+/* Navbar Styles */
+.Adnavbar {
+    background: linear-gradient(45deg, #6c5ce7, #00cec9);
+    padding: 30px;
+    border-bottom: 2px solid #00cec9;
+    display: flex;
+    margin-top: -150px;
+    position: fixed;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Adbrand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.Adlearning-icon {
+    margin-right: 10px;
+    color: #fdcb6e;
+}
+
+.Adnav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.Adnav-item {
+    margin-right: 30px;
+}
+
+/* Link Styles */
+.Adnav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: relative;
+}
+
+.Adnav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Adnav-link:hover {
+    background: linear-gradient(45deg, #00cec9, #6c5ce7);
+    color: #fff;
+}
+
+.Adnav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #fff;
+}
+.Adadmission-form {
+    max-width: 400px;   
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Adadmission-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.Adform-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.Adform-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.Adform-input:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+.Adform-input:hover {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 10px rgba(108, 92, 231, 0.2);
+}
+
+.Aderror {
+    border-color: #ff5555;
+}
+
+.Aderror-message {
+    color: #ff5555;
+    margin-top: 5px;
+}
+
+.Adselect-container {
+    position: relative;
+}
+
+.Adselect-container::before {
+    content: '\25BC'; /* Unicode character for down arrow */
+    font-size: 18px;
+    color: #555;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.Adselect-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.Adselect-container select:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+.Adselect-container select:hover {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 10px rgba(108, 92, 231, 0.2);
+}
+.Admission-heading {
+    text-align: center;
+    font-size: 24px;
+    /* margin-bottom: 10px; */
+    margin-top: 150px;
+    color: #333;
+  }
+  
+.Adsubmit-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    width:100px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.Adsubmit-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+.testimonials-section,
+.gallery-section {
+  margin-bottom: 40px;
+}
+
+.testimonials-heading,
+.gallery-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial,
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.star-icon {
+  color: #f0c419;
+  margin-right: 5px;
+}
+
+.testimonial-text,
+.testimonial-author {
+  font-size: 16px;
+  color: #555;
+}
+
+.testimonial-author {
+  font-style: italic;
+}
+
+.gallery-image {
+  width: 30%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
