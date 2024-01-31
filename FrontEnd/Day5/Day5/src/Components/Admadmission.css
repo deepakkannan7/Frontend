@@ -1,0 +1,123 @@
+/* Admadminssion.css */
+
+.Adadmnavbar {
+  background: linear-gradient(45deg, #6c5ce7, #00cec9);
+  padding: 30px;
+  border-bottom: 2px solid #00cec9;
+  display: flex;
+  margin-top:  -100px;
+  margin-left: -20px;
+  position: fixed;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Adadmbrand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.Adadmlearning-icon {
+  margin-right: 10px;
+  color: #fdcb6e;
+}
+
+.Adadmnav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.Adadmnav-item {
+  margin-right: 30px;
+}
+
+/* Link Styles */
+.Adadmnav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: relative;
+}
+
+.Adadmnav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Adadmnav-link:hover {
+  background: linear-gradient(45deg, #00cec9, #6c5ce7);
+  color: #fff;
+}
+
+.Adadmnav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: #fff;
+}
+
+
+/* Admadmission.css */
+
+.admadmission-container {
+  margin-top:100px
+}
+
+.admadission-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.admadission-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admadission-table th,
+.admadission-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.admadstudent-id,
+.admadcourse-name,
+.admadtotal-amount,
+.admadmode-of-payment,
+.admadpayment-date,
+.admadadmission-date,
+.admadstatus,
+.admadaction {
+  font-weight: bold;
+}
+
+.admadaction {
+  text-align: center;
+}
+
+.admaddelete-icon {
+  color: #ff4d4d;
+  cursor: pointer;
+}
