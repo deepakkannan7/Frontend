@@ -1,0 +1,151 @@
+/* AboutUsPage.css */
+
+.abtnavbar {
+  background: linear-gradient(45deg, #6c5ce7, #00cec9);
+  padding: 30px;
+  border-bottom: 2px solid #00cec9;
+  display: flex;
+  margin-top: -80px;
+  position: fixed;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.abtbrand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.abtlearning-icon {
+  margin-right: 10px;
+  color: #fdcb6e;
+}
+
+.abtnav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.abtnav-item {
+  margin-right: 30px;
+}
+
+/* Link Styles */
+.abtnav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: relative;
+}
+
+.abtnav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.abtnav-link:hover {
+  background: linear-gradient(45deg, #00cec9, #6c5ce7);
+  color: #fff;
+}
+
+.abtnav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: #fff;
+}
+
+/* About Us Container Styles */
+.about-us-container {
+  width: 70%;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  text-align: left;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.about-us-container:hover {
+  transform: scale(1.02);
+}
+
+.about-us-heading {
+  font-size: 36px;
+  color: #0c4c91;
+  margin-bottom: 20px;
+}
+
+.about-us-description,
+.mission-description,
+.approach-description,
+.partnerships-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mission-heading,
+.approach-heading,
+.why-choose-us-heading,
+.partnerships-heading,
+.testimonials-heading {
+  font-size: 28px;
+  color: #0c4c91;
+  margin-bottom: 20px;
+}
+
+.approach-section,
+.why-choose-us-section,
+.partnerships-section,
+.testimonials-section {
+  margin-bottom: 40px;
+}
+
+.why-choose-us-list {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.why-choose-us-list li {
+  margin-bottom: 10px;
+}
+
+.star-icon {
+  color: #ffbb00;
+  margin-right: 5px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+}
