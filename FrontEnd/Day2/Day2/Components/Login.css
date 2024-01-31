@@ -1,0 +1,155 @@
+/* Login.css */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+} 
+
+.learnquir-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #cc2e2e; /* Green color for heading */
+  }
+   /* .page-wrapper {
+    background: url('https://img.freepik.com/free-photo/back-school-witch-school-supplies_23-2148151036.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706400000&semt=ais'); 
+    background-size: cover;
+    height: 100vh; 
+  } */
+
+  .login-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px; /* Adjust the gap between elements */
+    max-width: 400px;
+    /* margin: 100px auto; */
+    margin-top: 200px;
+    margin-left: 300px;
+    background-color: #ecf0f1; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    /* margin-top: 00px; */
+  }
+  
+  .form-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .icon {
+    margin-bottom: 8px;
+  }
+  
+  .input-icon {
+    color: #3498db; /* Blue color for input icons */
+  }
+  
+  .input-field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #3498db; /* Blue underline */
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-bottom 0.3s ease-in-out;
+    background-color: #ecf0f1; /* Light gray background color */
+    color: #555; /* Dark gray text color */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .input-field:focus {
+    border-bottom: 2px solid #e73ccd; /* Red color on focus */
+  }
+  
+  .error-message {
+    color: #e74c3c; /* Red color for error messages */
+    margin-top: 5px;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    padding: 12px 30px;
+    background-color: #2ecc71; /* Green color for the button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-left: 140px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  }
+  
+  .login-button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased box shadow on hover */
+  }
+  
+  
+  .login-button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #555; /* Dark gray text color */
+  }
+  
+  .signup-link a {
+    color: #3498db; /* Blue color for signup link */
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .signin-with {
+    text-align: center;
+    /* margin-top: 20px; */
+    color: #555; /* Dark gray text color */
+  }
+  
+  .signin {
+    font-weight: bold;
+    color: #e67e22; /* Orange color for "Sign in with" */
+  }
+  
+  .signin-with p {
+    margin: 5px 0;
+    color: #555; /* Dark gray text color */
+  }
+  
+  .signin-with img {
+    width: 30px; /* Adjust the width of the logos as needed */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .signin-with img:hover {
+    transform: scale(1.2); /* Zoom in effect on hover */
+  }
+
+  .bgm2{
+     
+    background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
+    height:110vh;
+    margin-top:-100px;
+    background-size: cover;
+    padding: 20px;
+  }
+  
