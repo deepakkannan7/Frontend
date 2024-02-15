@@ -1,0 +1,456 @@
+/* Navbar Styles */
+.Adhnavbar {
+  background: linear-gradient(45deg, #6c5ce7, #00cec9);
+  padding: 30px;
+  border-bottom: 2px solid #00cec9;
+  display: flex;
+  margin-top:  -90px;
+  margin-left: -20px;
+  position: fixed;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Adhbrand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.Adhlearning-icon {
+  margin-right: 10px;
+  color: #fdcb6e;
+}
+
+.Adhnav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.Adhnav-item {
+  margin-right: 30px;
+}
+
+/* Link Styles */
+.Adhnav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: relative;
+}
+
+.Adhnav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Adhnav-link:hover {
+  background: linear-gradient(45deg, #00cec9, #6c5ce7);
+  color: #fff;
+}
+
+.Adhnav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: #fff;
+}
+  /* AboutUsPage.css */
+  
+  .bimg1 {
+    background: url('https://images.squarespace-cdn.com/content/v1/571a88642b8dde690c217bf0/1608360763444-T5TWH41DD6QB1KRFZOZ1/course-background+%281%29+%281%29.png?format=2500w');
+    background-size: cover;
+    height: 350vh;
+    margin-top: -10px;
+    /* position: relative; */
+  }
+  
+
+  
+  .display {
+    color: #5ce7db;
+    font-size: 40px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .display:hover {
+    color: #fdcb6e;
+  }
+  
+  .quote-container {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .quote-text {
+    color: rgb(22, 35, 227);
+    font-weight: bold;
+  }
+  
+  .adgrid-container1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  
+  .adgrid-left1,
+  .adgrid-right1 {
+    flex: 1;
+  }
+  
+  .adgrid-item1 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .adgrid-item1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* .adgrid-item h3 {
+    margin-left: 120px;
+    color: #0c4c91;
+  } */
+  
+  .adgrid-item1 p {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  .adgrid-icon1 {
+    margin-right: 10px;
+  }
+  .adgrid-item1:nth-child(odd) {
+    background-color: #e0f7fa; /* Light Blue */
+  }
+  
+  .adgrid-item1:nth-child(even) {
+    background-color: #ffcdd2; /* Light Red */
+  }
+  
+  .adgrid-item1 h3 {
+    margin-left: 120px;
+    color: #0c4c91; /* Dark Blue */
+  }
+/* AdminHomepage.css */
+
+.user-stats-section {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 800px; /* Adjust width as needed */
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .stat {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .stat:hover {
+    background-color: #f0f0f0; /* Light Gray on hover */
+  }
+  
+  .stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db; /* Blue color for value */
+  }
+  
+  .stat-label {
+    margin-top: 5px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* Animated bar chart */
+  .chart {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .bar {
+    width: 30px;
+    background-color: #3498db;
+    transition: height 0.5s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .bar:hover {
+    background-color: #2980b9; /* Darker Blue on hover */
+  }
+  /* AdminHomepage.css */
+
+/* Existing styles... */
+/* AdminHomepage.css */
+
+/* Existing styles... */
+
+/* System Health Status Section */
+.system-health-section {
+    background-color: #3498db; /* Blue background color */
+    padding: 30px;
+    width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff; /* White text color */
+    text-align: center;
+  }
+  
+  .system-health-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .health-stat {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .health-stat:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Lighter semi-transparent white background on hover */
+  }
+  
+  .health-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .health-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* AdminHomepage.css */
+
+/* Add the following styles to your AdminHomepage.css */
+
+/* User Feedback Section */
+.user-feedback-section {
+  margin-top: 20px;
+}
+
+.feedback-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.feedback-details {
+  flex-grow: 1;
+}
+
+.username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.course-name {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.user-comment {
+  margin-bottom: 5px;
+}
+
+.user-rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-star {
+  color: gold;
+  margin-right: 3px;
+}
+
+/* Recent Courses Section */
+.recent-courses-section {
+  margin-top: 20px;
+}
+
+.recent-courses-list {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-course-item {
+  margin-bottom: 20px;
+}
+
+.course-name {
+  font-weight: bold;
+}
+
+.instructor {
+  font-style: italic;
+  color: #555;
+}
+
+.date-published {
+  color: #777;
+}
+
+  /* Additional styles for other sections... */
+  .adgrid-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .adgrid-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .adgrid-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Right Grid */
+  .adgrid-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .adgrid-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .adgrid-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .adgrid-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  /* AdminHomepage.css */
+
+/* ... (Previous styles) */
+
+.admin-dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 250px;
+}
+
+.summary-section {
+  flex: 1;
+}
+.summary-section h2
+{
+  color:#fdcb6e
+}
+.summary-item {
+  margin-bottom: 20px;
+  color:#00cec9;
+  margin-top: 20px;
+}
+
+.summary-label {
+  font-weight: bold;
+}
+
+.quick-links-section {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.quick-links-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quick-links-list li {
+  margin-bottom: 10px;
+}
+
+.notification-area {
+  flex: 1;
+  margin-left: -200px;
+}
+.notification-area h2{
+  color:#fdcb6e
+}
+
+.notification-item {
+  margin-bottom: 15px;
+  color:#00cec9;
+  margin-top: 20px;
+}
+
+.notification-text {
+  font-weight: bold;
+}
+
+.notification-time {
+  color: #777;
+}
+
+/* ... (Remaining styles) */
